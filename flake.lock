@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1653936696,
+        "narHash": "sha256-M6bJShji9AIDZ7Kh7CPwPBPb/T7RiVev2PAcOi4fxDQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ce6aa13369b667ac2542593170993504932eb836",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "tortoise-tts": "tortoise-tts"
+      }
+    },
+    "tortoise-tts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1657290163,
+        "narHash": "sha256-A3rbXe85vCqb9u8CcwLncHBrhwxYeIXh866oWDs3KiM=",
+        "owner": "neonbjb",
+        "repo": "tortoise-tts",
+        "rev": "122d92d491896ca80cf5fbfe7c310ec761a2c0ca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neonbjb",
+        "repo": "tortoise-tts",
+        "rev": "122d92d491896ca80cf5fbfe7c310ec761a2c0ca",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

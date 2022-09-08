@@ -1,0 +1,35 @@
+diff --git a/tortoise/api.py b/tortoise/api.py
+index 296ef14..adc0730 100644
+--- a/tortoise/api.py
++++ b/tortoise/api.py
+@@ -43,29 +43,7 @@ def download_models(specific_models=None):
+     """
+     Call to download all the models that Tortoise uses.
+     """
+-    os.makedirs(MODELS_DIR, exist_ok=True)
+-
+-    def show_progress(block_num, block_size, total_size):
+-        global pbar
+-        if pbar is None:
+-            pbar = progressbar.ProgressBar(maxval=total_size)
+-            pbar.start()
+-
+-        downloaded = block_num * block_size
+-        if downloaded < total_size:
+-            pbar.update(downloaded)
+-        else:
+-            pbar.finish()
+-            pbar = None
+-    for model_name, url in MODELS.items():
+-        if specific_models is not None and model_name not in specific_models:
+-            continue
+-        model_path = os.path.join(MODELS_DIR, model_name)
+-        if os.path.exists(model_path):
+-            continue
+-        print(f'Downloading {model_name} from {url}...')
+-        request.urlretrieve(url, model_path, show_progress)
+-        print('Done.')
++    print('Done ;)')
+ 
+ 
+ def get_model_path(model_name, models_dir=MODELS_DIR):
